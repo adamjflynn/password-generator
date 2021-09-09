@@ -1,33 +1,81 @@
-//Assignment code here
+// Assignment code here
 
-//Function for "generate password" button
+// Function for "generate password" button
 
 var generatePassword = function() {
 
-    //Alert asking user to choose password criteria
+    // Alert asking user to choose password criteria
 
     alert("Please choose from your password criteria:");
   
-    //empty string for the password
+    // Empty string for the password
 
     var passwordContains = "";
   
-    //define variables before they are called
+    // Define variables before they are called
 
-    var hasLower;
-    var hasUpper;
-    var hasNumeric;
+    var hasLowercase;
+    var hasUppercase;
+    var hasNumbers;
     var hasSpecial;
   
-    //define characters for passwordContains
+    // Define characters for passwordContains
 
-    var lowers = "abcdefghijklmnopqrstuvwxyz";
-    var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var lowercase = "abcdefghijklmnopqrstuvwxyz";
+    var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var numbers = "0123456789";
     var special = "!'`~@#$%^&*()_+-][}{|><?;:=";
 
+// Prompt for password length
+
+var passLength = prompt('Choose a password length between 8 and 128 characters');
+    if (passLength < 8 || passLength > 128) {
+        alert("You must provide a valid answer! Please try again");
+    return generatePassword();
+    }
+
+// Prompt for lowercase letters
+var promptLowercase = function() {
+    hasLower = confirm('Will you password contain lowercase letters?');
+    if (hasLower === true) {
+        passwordContains = passwordContains = lowercase;
+    }
+}
+
+// Prompt for uppercase
+
+var promptUppercase = function() {
+    hasUppercase = confirm('Will your password contain UPPERCASE letters?');
+    if (hasUppercase === true) {
+        passwordContains = passwordContains + uppercase;
+    }
+}
+
+// Prompt for numbers
+
+var promptNumber = function () {
+    hasNumbers = confirm('Will your password contain numbers?');
+    if (hasNumbers === true) {
+        passwordContains = passwordContains + numbers;
+    }
+}
+
+// Prompt for special characters
+
+var promptSpecial = function () {
+    hasSpecial = confirm('Will your password contain special characters?');
+    if (hasSpecial === true) {
+        passwordContains = passwordContains + special;
+    }
+}
+
+promptLowercase();
+promptUppercase();
+promptNumber();
+promptSpecial();
 
 // Get references to the #generate element
+
 
 var generateBtn = document.querySelector("#generate");
 
