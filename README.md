@@ -4,9 +4,9 @@ The purpose of this project was to create an application using JavaScript with t
 
 - Created variables to identify the options for the passoword criteria. 
 - Created prompts to ask for the users input for the password criteria.
-- Cretaed functions to statisfy the prompts.
-- Created a loop to generate a ranodom password to fulfill the password criteria submitted.  
+- Created functions to statisfy the prompts.
+- Created a loop to generate a random password to fulfill the password criteria submitted.  
 
 Link to the deployed application [Password Generator](https://adamjflynn.github.io/password-generator/) site.
 
-![Paswword Generator](/assets/password-generator.jpg "Passowrd Generator")
+![Password Generator](assets\password-generator.jpg "Password Generator")
