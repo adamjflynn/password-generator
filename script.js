@@ -23,7 +23,7 @@ var generatePassword = function () {
 	var lowercase = "abcdefghijklmnopqrstuvwxyz";
 	var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	var numbers = "0123456789";
-	var special = "!'`~@#$%^&*()_+-][}{|><?;:=";
+	var special = "!'`~@#$%^&*()_+-][}{|><?;:= ";
 
 	// Prompt for password length
 
@@ -37,7 +37,7 @@ var generatePassword = function () {
 
 	// Prompt for lowercase letters
 	var promptLowercase = function () {
-		hasLower = confirm("Will you password contain lowercase letters?");
+		hasLower = confirm("Will your password contain lowercase letters?");
 		if (hasLower === true) {
 			passwordContains = passwordContains = lowercase;
 		}
