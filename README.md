@@ -9,4 +9,4 @@ The purpose of this project was to create an application using JavaScript with t
 
 Link to the deployed application [Password Generator](https://adamjflynn.github.io/password-generator/) site.
 
-![Password Generator](assets\password-generator.jpg "Password Generator")
+![Password Generator](../password-generator/password-generator.jpg "Password Generator")
